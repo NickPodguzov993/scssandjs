@@ -6,6 +6,9 @@ body {
 .dialog-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 }
 
 .dialog {
@@ -37,7 +40,6 @@ body {
   &__content {
     display: flex;
     height: 350px;
-    overflow: auto;
     background-color: white;
 
   }
@@ -46,11 +48,11 @@ body {
     &_left {
       width: 30%;
       border-right: 1px solid #ccc;
-      height: 500px;
     }
 
     &_right {
       width: 70%;
+      overflow: auto;
     }
   }
 
