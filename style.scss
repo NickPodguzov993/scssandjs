@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: #777;
+}
+
+.dialog-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+
+  &__header {
+    background-color: #ddd;
+    display: flex;
+  }
+
+  &__header-title-container {
+    width: 230px;
+    height: 70px;
+
+  }
+
+  &__header-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__header-button {
+
+  }
+
+  &__content {
+    display: flex;
+    height: 350px;
+    overflow: auto;
+    background-color: white;
+
+  }
+
+  &__content-block {
+    &_left {
+      width: 30%;
+      border-right: 1px solid #ccc;
+      height: 500px;
+    }
+
+    &_right {
+      width: 70%;
+    }
+  }
+
+  &__footer {
+    background-color: #ddd;
+    text-align: center;
+
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
